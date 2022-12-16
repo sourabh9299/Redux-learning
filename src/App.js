@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import Counter from './components/simple-react/Counter';
 import './App.css';
+import store from './redux/store';
+import { Provider } from 'react-redux';
+import CounterRedux from './redux/CounterRedux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <h1>Redux Learning</h1>
+      {/* <Counter></Counter> */}
+      <CounterRedux></CounterRedux>
+    </Provider>
   );
 }
 
