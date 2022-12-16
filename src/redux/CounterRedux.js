@@ -8,16 +8,14 @@ function ConterRedux(prop) {
         <>
             <div className="main">
                 <h3>counter</h3>
-                <span>Count: {Count}</span>
-                <button onClick={prop.increment}>+</button>
+                <span className="spanClass">Count: {Count}</span>
                 <button onClick={prop.decrement}>-</button>
+                <button onClick={prop.increment}>+</button>
+                <button onClick={prop.plus5}>+5</button>
                 <button onClick={prop.reset}>reset</button>
-                <button onClick={prop.plus5}>5</button>
-
             </div>
         </>
-    )
-}
+    )}
 
 function mapStateToProps(state) {
     return state;

@@ -6,3 +6,16 @@ button {
     height: 50px;
     width: 50px;
 }
+.spanClass {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    height: auto;
+    width: 93px;
+    padding: 30px;
+}
+
+#batButton {
+    height: unset;
+    width: 60px;
+}

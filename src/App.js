@@ -3,6 +3,7 @@ import './App.css';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import CounterRedux from './redux/CounterRedux';
+import BatRedux from './components/simple-react/BatRedux';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <h1>Redux Learning</h1>
       {/* <Counter></Counter> */}
       <CounterRedux></CounterRedux>
+      <BatRedux></BatRedux>
     </Provider>
   );
 }
